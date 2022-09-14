@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-14T15:41:39 IST" name="Default suite" finished-at="2022-09-14T15:41:41 IST" duration-ms="2730">
+    <groups>
+    </groups>
+    <test started-at="2022-09-14T15:41:39 IST" name="Default test" finished-at="2022-09-14T15:41:41 IST" duration-ms="2730">
+      <class name="tests.Restassured2">
+        <test-method signature="Get_Api_With_Response()[pri:0, instance:tests.Restassured2@63a12c68]" started-at="2022-09-14T15:41:39 IST" name="Get_Api_With_Response" finished-at="2022-09-14T15:41:41 IST" duration-ms="2697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Api_With_Response -->
+      </class> <!-- tests.Restassured2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

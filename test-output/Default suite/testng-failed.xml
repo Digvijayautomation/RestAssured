@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.booking">
+      <class name="tests.Restassured_Post2_Using_POJO">
         <methods>
-          <include name="get_api_call"/>
+          <include name="pojotest"/>
         </methods>
-      </class> <!-- tests.booking -->
+      </class> <!-- tests.Restassured_Post2_Using_POJO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

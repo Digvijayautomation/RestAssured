@@ -54,6 +54,10 @@ public class RestAssured_Post1 {
 		         Response response= given()
 				.header("Content-Type",ContentType.JSON)
 				.body(new File(System.getProperty("user.dir")+"/body.json"))
+<<<<<<< HEAD
+=======
+				
+>>>>>>> 45169f70df19d27df53aee43b03cb2771323585d
 				.post("https://reqres.in/api/users");
 
 				 response.prettyPrint();

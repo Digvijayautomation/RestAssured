@@ -6,6 +6,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 
+
 public class Restauured_Update1 {
 	
 	@Test
@@ -21,8 +22,11 @@ public class Restauured_Update1 {
 		Response response= given()
 				.header("Content-Type",ContentType.JSON)
 				.body(jobject.toMap()) // it will convert it to map and for map so jaCkson will serialze 
+
 				.put("https://reqres.in/api/users/2");
-		
+				
+
+
 				 response.prettyPrint();
 		
 	}

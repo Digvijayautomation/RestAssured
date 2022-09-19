@@ -32,7 +32,7 @@ public class Restassured_Post2_Using_POJO {
 					.post("https://reqres.in/api/users");
 
 					 response.prettyPrint();
- 
+
 
 						};
 		

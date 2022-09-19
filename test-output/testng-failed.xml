@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Restassured_Post2_Using_POJO">
+      <class name="tests.Restassured_x_Assertions">
         <methods>
-          <include name="pojotest"/>
+          <include name="assertions"/>
         </methods>
-      </class> <!-- tests.Restassured_Post2_Using_POJO -->
+      </class> <!-- tests.Restassured_x_Assertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

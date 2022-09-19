@@ -12,7 +12,7 @@ import pojo.Employee_POJO;
 
 public class Restassured_Post2_Using_POJO {
 	
-	//Pojo- Plan old java object
+	//Pojo- Plane Old Java Object
 	//for every {} we need to create class
 	//for every [] we need to create list
 	
@@ -31,11 +31,13 @@ public class Restassured_Post2_Using_POJO {
 			         Response response= given()
 					.header("Content-Type",ContentType.JSON)
 					.body(emp)
-					.log()
-					.all()
 					.post("https://reqres.in/api/users");
 
 					 response.prettyPrint();
+					 
+					 
+					 
+					 
 
 						};
 		

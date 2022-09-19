@@ -34,8 +34,7 @@ public class RestAssured_Post1 {
 					+ "    \"name\": \"Digvijay\",\r\n"
 					+ "    \"job\": \"leader\"\r\n"
 					+ "}")
-			.log()
-			.all()
+			
 			.post("https://reqres.in/api/users");
 
 	response.prettyPrint();
@@ -55,8 +54,7 @@ public class RestAssured_Post1 {
 		         Response response= given()
 				.header("Content-Type",ContentType.JSON)
 				.body(new File(System.getProperty("user.dir")+"/body.json"))
-				.log()
-				.all()
+				
 				.post("https://reqres.in/api/users");
 
 				 response.prettyPrint();
@@ -81,14 +79,13 @@ public class RestAssured_Post1 {
 		
 		//We can also change the parameters in request body dynamically(If Required)
 		// We can pass dynamic data using "Java Faker"
-		String external_file_data_updated= external_file_data.replace("SURAJ", new Faker().name().firstName());
+		String external_file_data_updated= external_file_data.replace("SURAJ", new Faker().name().firstName());// this will update suraj with random firstname
 			
 			
 						 Response response= given()
 								.header("Content-Type",ContentType.JSON)
 								.body(external_file_data_updated)
-								.log()
-								.all()
+								
 								.post("https://reqres.in/api/users");
 
 								 response.prettyPrint();
@@ -104,7 +101,9 @@ public class RestAssured_Post1 {
 		// If data having[] use List
 		// one issue is there that hashmap can create data as objects or string but we need data in json, so we have to add jakson databind depenceny
 		//Serialisers hashmapobject data >>byte stream>>json //for this we have to add jakson databind depenceny it will do seralization automatically
+		// Serialization means converting your language specfic object to required object like java to json
 		// its verbose and not suitbale to large data							
+		
 		@Test
 		public void Post_Api3() {
 			
@@ -121,9 +120,8 @@ public class RestAssured_Post1 {
 			
 			Response response= given()
 					.header("Content-Type",ContentType.JSON)
-					.body(hashmapobject)
-					.log()
-					.all()
+					.body(hashmapobject) // because of jakson dependency will it will convert this hashmapobject data in json format which will understood by restauured
+					
 					.post("https://reqres.in/api/users");
 
 					 response.prettyPrint();
@@ -136,7 +134,7 @@ public class RestAssured_Post1 {
 						
 		//5th Approach		
 		//Pass request body as JSON OBEJCT
-		// Have to add dependdency for JSON
+		// Have to add dependdency for JSON Maven
 		//Advantage is no need to add datatype
 									
 						@Test
@@ -159,9 +157,8 @@ public class RestAssured_Post1 {
 							Response response= given()
 									.header("Content-Type",ContentType.JSON)
 									//body(jobject.toString())// have to convert it into string or we can do like below
-									.body(jobject.toMap()) // it will convert it to map and for map jakson will serialze like he did for Post_Api3
-									.log()
-									.all()
+									.body(jobject.toMap()) // it will convert it to map and for map so jakson will serialze like he did for Post_Api3
+									
 									.post("https://reqres.in/api/users");
 
 									 response.prettyPrint();

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T17:17:47 IST" name="Default suite" finished-at="2022-09-15T17:17:50 IST" duration-ms="2419">
+  <suite started-at="2022-09-19T09:41:16 IST" name="Default suite" finished-at="2022-09-19T09:41:18 IST" duration-ms="2474">
     <groups>
     </groups>
-    <test started-at="2022-09-15T17:17:47 IST" name="Default test" finished-at="2022-09-15T17:17:50 IST" duration-ms="2419">
+    <test started-at="2022-09-19T09:41:16 IST" name="Default test" finished-at="2022-09-19T09:41:18 IST" duration-ms="2474">
       <class name="tests.Restassured_Post3_Using_POJO_With_LOMBOK">
-        <test-method signature="pojotest()[pri:0, instance:tests.Restassured_Post3_Using_POJO_With_LOMBOK@5fbdfdcf]" started-at="2022-09-15T17:17:47 IST" name="pojotest" finished-at="2022-09-15T17:17:50 IST" duration-ms="2384" status="PASS">
+        <test-method signature="pojotest()[pri:0, instance:tests.Restassured_Post3_Using_POJO_With_LOMBOK@2fb3536e]" started-at="2022-09-19T09:41:16 IST" name="pojotest" finished-at="2022-09-19T09:41:18 IST" duration-ms="2440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pojotest -->

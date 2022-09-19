@@ -26,8 +26,6 @@ public class Restassured_Post3_Using_POJO_With_LOMBOK {
 			         Response response= given()
 					.header("Content-Type",ContentType.JSON)
 					.body(emp)
-					.log()
-					.all()
 					.post("https://reqres.in/api/users");
 
 					 response.prettyPrint();

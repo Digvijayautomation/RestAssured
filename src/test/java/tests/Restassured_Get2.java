@@ -12,9 +12,8 @@ public class Restassured_Get2 {
 		
 		// Storing the response by Creating response obejct 
 	 Response response=given()
+			
 	.get("https://gorest.co.in/public/v2/posts");
-	 
-	 
 	 
 	 
 	 response.prettyPrint(); //it will print the response body

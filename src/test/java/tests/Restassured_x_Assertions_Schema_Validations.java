@@ -3,15 +3,14 @@ package tests;
 import static io.restassured.RestAssured.given;
 
 import org.json.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
-public class Restassured_x_Assertions {
-	
+public class Restassured_x_Assertions_Schema_Validations {
+
 	
 	@Test
 	public void assertions() {
@@ -35,26 +34,12 @@ public class Restassured_x_Assertions {
 		response.prettyPrint();
 
 		
-		//Response Fetching
-		System.out.println(response.jsonPath().getString("name")); // if you want to fetch perticular filed from response you can use jsonpath
-		//System.out.println(response.jsonPath().getString("name[1]"));	// we can use index if there are multiple values for single parameter	 
 		
 		
 		//Schema Validations
 		// We have to add json-schema-validator depndency for this
 		
-		response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Schema.json")); //give the schema validator file name as parent 
+		response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("Schema.json")); //give the schema validator file name as parameter 
 		
-		
-		
-		// Assertions
-				Assert.assertEquals(response.statusCode(), 201);
-				Assert.assertEquals(response.jsonPath().getString("name"), "Aniket");
-				
-	
-				
-			
-		
-	}
-
+	}	
 }

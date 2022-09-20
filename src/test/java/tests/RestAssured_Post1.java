@@ -9,12 +9,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.json.JSONObject;
 import org.testng.annotations.Test;
-
 import com.github.javafaker.Faker;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -54,10 +51,7 @@ public class RestAssured_Post1 {
 		         Response response= given()
 				.header("Content-Type",ContentType.JSON)
 				.body(new File(System.getProperty("user.dir")+"/body.json"))
-<<<<<<< HEAD
-=======
-				
->>>>>>> 45169f70df19d27df53aee43b03cb2771323585d
+
 				.post("https://reqres.in/api/users");
 
 				 response.prettyPrint();

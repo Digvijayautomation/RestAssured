@@ -21,8 +21,8 @@ public class Restauured_Update1 {
 		
 		Response response= given()
 				.header("Content-Type",ContentType.JSON)
-				.body(jobject.toMap()) // it will convert it to map and for map so jaCkson will serialze 
-
+				.body(jobject) 
+				.log().all()
 				.put("https://reqres.in/api/users/2");
 				
 

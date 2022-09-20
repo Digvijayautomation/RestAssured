@@ -35,9 +35,7 @@ public class Restassured_x_Assertions_Assertj {
 		
 		response.prettyPrint();
 
-		
-		
-		
+	
 				// Assertions using assertj
 				// for this we have to do static import for the import static org.assertj.core.api.Assertions.*;
 					

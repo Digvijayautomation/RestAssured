@@ -2,14 +2,11 @@ package tests;
 
 import static io.restassured.RestAssured.given;
 
-
-import static org.assertj.core.api.Assertions.*;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 public class Restassured_x_Assertions_Testng {

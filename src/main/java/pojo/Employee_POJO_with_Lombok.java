@@ -24,7 +24,7 @@ import lombok.Setter;
 
 @JsonInclude(value=JsonInclude.Include.NON_EMPTY) // Using this annotation it will send only non empty values in request body
 @JsonPropertyOrder(alphabetic = true) // Using this annotation response will come in alpabetically order
-@JsonIgnoreProperties(value="createdAt") // if we want to igonre some field we can thosw into this
+@JsonIgnoreProperties(value="createdAt") // if we want to igonre some field we can mentioned those into this
 
 
 public class Employee_POJO_with_Lombok {

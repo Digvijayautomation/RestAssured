@@ -1,10 +1,8 @@
 package tests;
 
-import org.testng.annotations.Test;
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import org.testng.annotations.Test;
 
 public class Restassured_Get1 {
 	

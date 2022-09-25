@@ -4,11 +4,9 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.json.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 public class Restassured_x_Assertions_Assertj {
@@ -38,7 +36,7 @@ public class Restassured_x_Assertions_Assertj {
 	
 				// Assertions using assertj
 				// for this we have to do static import for the import static org.assertj.core.api.Assertions.*;
-					
+				// If assertion pass it will not show anything , but if it fails is shows you error message
 				assertThat(response.getStatusCode())
 				.as("Checking the Status code is valid or not") // we can provide description using as
 				.isEqualTo(201);

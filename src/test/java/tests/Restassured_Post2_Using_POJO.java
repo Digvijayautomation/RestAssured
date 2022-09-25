@@ -22,7 +22,7 @@ public class Restassured_Post2_Using_POJO {
 	
 			System.out.println("Passing JSON Body Using POJO");
 			// Creating object of Employee_POJO Class and passing it as body
-			// datatypes for the data we are passing passing in this emp object is already fixed in pojo class
+			// datatypes for the data we are passing in this emp object is already fixed in pojo class
 			Employee_POJO emp=	new Employee_POJO(20,"Digvijay","QA Lead","15-09-2022");
 			
 			

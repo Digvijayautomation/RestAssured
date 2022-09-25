@@ -76,7 +76,7 @@ public class RestAssured_Post1 {
 		
 		//We can also change the parameters in request body dynamically(If Required)
 		// We can pass dynamic data using "Java Faker"
-		String external_file_data_updated= external_file_data.replace("SURAJ", new Faker().name().firstName());// this will update suraj with random firstname
+		String external_file_data_updated= external_file_data.replace("SURAJ", new Faker().name().firstName());// this will update suraj with random firstname(Used java faker dependecy here)
 			
 			
 						 Response response= given()
@@ -117,7 +117,7 @@ public class RestAssured_Post1 {
 			
 			Response response= given()
 					.header("Content-Type",ContentType.JSON)
-					.body(hashmapobject) // because of jakson dependency will it will convert this hashmapobject data in json format which will understood by restauured
+					.body(hashmapobject) // because of jakson dependency will convert this hashmapobject data in json format which will understood by restauured
 					
 					.post("https://reqres.in/api/users");
 
@@ -154,7 +154,7 @@ public class RestAssured_Post1 {
 							Response response= given()
 									.header("Content-Type",ContentType.JSON)
 									//body(jobject.toString())// have to convert it into string or we can do like below
-									.body(jobject.toMap()) // it will convert it to map and for map so jakson will serialze like he did for Post_Api3
+									.body(jobject.toMap()) // it will convert it to map, and for map jackson will serialize like he did for Post_Api3
 									
 									.post("https://reqres.in/api/users");
 

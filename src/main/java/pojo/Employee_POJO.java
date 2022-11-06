@@ -11,6 +11,18 @@ public class Employee_POJO {
 	private String createdAt;
 	
 	
+	// Constructor
+		public Employee_POJO(int id,String name, String job, String createdAt)
+		{
+			
+			this.id=id;
+			this.name=name;
+			this.job=job;
+			this.createdAt=createdAt;
+			
+		}
+	
+	
 	//Getters methods
 	
 		public int getId() {
@@ -38,16 +50,7 @@ public class Employee_POJO {
 
 
 	
-	// Constructor
-	public Employee_POJO(int id,String name, String job, String createdAt)
-	{
-		
-		this.id=id;
-		this.name=name;
-		this.job=job;
-		this.createdAt=createdAt;
-		
-	}
+	
 	
 	
 
